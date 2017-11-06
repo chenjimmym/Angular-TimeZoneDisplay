@@ -10,10 +10,14 @@
 
 <body>
   <h1>US Time Zone Display</h1>
-  <div (click)='gotClicked()' class="box" [ngClass]="{'boxOn': boxClicked}">PST</div>
-  <div class="box" [ngClass]="{'boxOn': boxClicked}">MST</div>
-  <div class="box" [ngClass]="{'boxOn': boxClicked}">CST</div>
-  <div class="box" [ngClass]="{'boxOn': boxClicked}">EST</div>
+  <div style="text-align:center">
+    <button (click)="gotClicked('PST')" class="box" [ngClass]="{'boxOn': selected == 'PST'}">PST</button>
+    <button (click)="gotClicked('MST')" class="box" [ngClass]="{'boxOn': selected == 'MST'}">MST</button>
+    <button (click)="gotClicked('CST')" class="box" [ngClass]="{'boxOn': selected == 'CST'}">CST</button>
+    <button (click)="gotClicked('EST')" class="box" [ngClass]="{'boxOn': selected == 'EST'}">EST</button>
+    <button (click)="gotClicked('CLEAR')" class="box">Clear</button>
+  </div>
+  <h2>{{time | date:'medium'}}</h2>
 </body>
 
 </html>
