@@ -1,0 +1,15 @@
+h1 {
+    text-align: center;
+}
+
+.box {
+    width: 100px;
+    height: 80px;
+    background-color: rgb(221, 221, 221);
+    text-align: center;
+    display: inline-block;
+}
+
+.boxOn {
+    background-color: rgb(255, 222, 115);
+}

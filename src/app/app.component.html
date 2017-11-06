@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>US Timezone Display</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+  <h1>US Time Zone Display</h1>
+  <div (click)='gotClicked()' class="box" [ngClass]="{'boxOn': boxClicked}">PST</div>
+  <div class="box" [ngClass]="{'boxOn': boxClicked}">MST</div>
+  <div class="box" [ngClass]="{'boxOn': boxClicked}">CST</div>
+  <div class="box" [ngClass]="{'boxOn': boxClicked}">EST</div>
+</body>
+
+</html>
